@@ -1,0 +1,128 @@
+
+.heroimg {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 50px;
+}
+
+.herochild {
+    position: relative;
+}
+
+.herochild {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    transform: translateX(450px) translateY(150px);
+    text-align: center;
+    color: rgb(40, 43, 41);
+    font-weight: 600;
+    font-size: 30px;
+    background-color: rgba(228, 206, 177, 0.152);
+    width: 100%;
+}
+
+.nn {
+    padding: 20px;
+}
+
+.cards1,
+.cards2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 25px auto;
+}
+
+.card {
+    width: 100%;
+    flex: 1 1 280px;
+    overflow: hidden;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+#about h2,
+#contact h2,
+section h2 {
+    margin-bottom: 15px;
+}
+
+#about p,
+#contact p {
+    color: #666;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+}
+
+footer a {
+    color: bisque;
+    text-decoration: none;
+    margin: 5px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+form .form-control,
+form .form-select {
+    margin-top: 5px;
+}
+
+
+
+@media (max-width: 782px) {
+    .heropar {
+        position: relative;
+        width: 100%;
+    }
+
+    .heroimg {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    .herochild {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        padding: 15px;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .herochild h1 {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+    .herochild p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}
